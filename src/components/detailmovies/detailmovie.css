@@ -1,0 +1,45 @@
+.detailmovie__section{
+    background-image: url(http://untroubled.org/backgrounds/space/stars.gif);
+}
+
+.credits{
+    padding: 40px;
+    text-align: justify;
+    margin: 0 auto;
+    letter-spacing: 1.5px;
+    height: 500px;
+    transform: perspective(200px) rotateX(14deg);
+    animation: intro 20s linear infinite;
+}
+
+.opening__text{
+    color:var(--yellow);
+    line-height: 4rem;
+    margin-bottom: 20px;
+}
+
+@keyframes intro {
+    0% {
+      transform: perspective(200px) rotateX(14deg) translateY(800px);
+      opacity: 1;
+    }
+    90% {
+      opacity: 0.5;
+    }
+    100% {
+      transform: perspective(200px) rotateX(20deg) translateY(-1000px);
+      opacity: 0;
+    }
+  }
+
+.detailmovie__button{
+  background-color: var(--yellow);
+}
+
+@media (max-width: 1024px) { 
+  .credits{
+    padding: 0;
+    height: 700px;
+
+}
+ }

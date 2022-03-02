@@ -1,0 +1,28 @@
+.header__container__content{
+    width: 95%;
+}
+
+.section__movies{
+    background-color: var(--blackBackground);
+}
+
+.movie_card{
+    height: 550px;
+    width: 350px;
+    background-color: var(--cardBackground);
+}
+.movie_card_title{
+    color:var(--yellow)
+}
+
+
+@media (max-width: 640px) { 
+    .movie_card{
+        height: auto;
+        width: 100%;
+        background-color: var(--cardBackground);
+    }
+    .container__card__movies{
+        width: 90%;
+    }
+}
